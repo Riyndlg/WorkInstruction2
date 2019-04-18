@@ -27,7 +27,7 @@ namespace Practice_case5
                     Console.WriteLine(operand1 * operand2);
                     break;
                 case "/":
-                    if ((operand2 != 0) && (operand2 != 0))
+                    if ((operand1 != 0) && (operand2 != 0))
                         Console.WriteLine(operand1 / operand2);
                     else Console.WriteLine("Operation was cancelled, error in value of operands");
                     break;
