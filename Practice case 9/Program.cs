@@ -13,7 +13,7 @@ namespace Practice_case_9
             int operand1, operand2;
             string sign;
             string choice = "N";
-            while (choice == "N")
+            do
             {
                 Console.WriteLine("Enter value for operands:");
                 operand1 = int.Parse(Console.ReadLine());
@@ -38,16 +38,17 @@ namespace Practice_case_9
                         {
                             Console.WriteLine("Operation was cancelled, error in value of operands. Do you want to try again? Y/N:");
                             choice = Console.ReadLine();
-                            choice.ToUpper();
+                            choice = choice.ToUpper();
                         }
                         break;
                     default:
                         Console.WriteLine("Wrong value, this operation not exist. Do you want to try again? Y/N:");
                         choice = Console.ReadLine();
-                        choice.ToUpper();
+                        choice = choice.ToUpper();
                         break;
                 }
             }
+            while (choice == "Y");
             Console.ReadKey();
         }
     }
